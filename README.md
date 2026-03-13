@@ -5,6 +5,10 @@
 
 KB증권 M-able 와이드 웹의 TradingView 차트에서 **현재 마우스 십자선(Crosshair) 위치의 가격과 직전 종가 대비 등락률(%)을 직관적으로 보여주는 크롬 확장 프로그램**입니다.
 
+## 🎥 시연 영상 (Demo)
+
+<video src="./시연영상.mp4" controls="controls" width="100%"></video>
+
 ---
 
 ## ✨ 주요 기능 (Features)
@@ -26,7 +30,6 @@ KB증권 M-able 와이드 웹의 TradingView 차트에서 **현재 마우스 십
 
 1.  **확장 프로그램 다운로드:**
     *   이 프로젝트의 파일들(`manifest.json`, `content.js`)을 하나의 폴더(예: `KB-WTS-Extension`)에 모아둡니다.
-    *   *(참고: `tooltip.js`, `style.css`는 최신 최적화 과정에서 코어 엔진에 통합되어 더 이상 필요하지 않습니다.)*
 2.  **크롬 확장 프로그램 관리 페이지 접속:**
     *   크롬 브라우저를 열고 주소창에 `chrome://extensions/` 를 입력하여 접속합니다.
 3.  **개발자 모드 켜기:**
@@ -45,10 +48,3 @@ KB증권 M-able 와이드 웹의 TradingView 차트에서 **현재 마우스 십
 *   **`content.js`:** 확장 프로그램의 핵심 코어 엔진입니다.
     *   **TradingView Hook:** TradingView의 내부 인스턴스(`chartWidgetCollection`, `_model` 등)에 접근해 가격 데이터와 크로스헤어 좌표를 직접 추출합니다.
     *   **DOM Overlay:** iframe의 document 내부에 직접 `div` 패널을 만들어 주입함으로써 DOM 트리 변화에 따른 렌더링 병목을 없앴습니다.
-
----
-
-## 📝 개발자 참고 (Developer Notes)
-
-*   본 프로그램은 KB M-able 웹 트레이딩 시스템 내부의 TradingView 구조 파악을 통해 제작되었습니다. 사이트의 대규모 UI 업데이트 시 CSS 선택자나 Iframe 구조가 변경되면 로직 업데이트가 필요할 수 있습니다.
-*   불필요한 파일(`tooltip.js`, `style.css`) 제거 및 전역 이벤트 리스너 통합으로 메모리 누수 방지 처리가 완료된 버전입니다.
