@@ -5,9 +5,6 @@
 
 KB증권 M-able 와이드 웹의 TradingView 차트에서 **현재 마우스 십자선(Crosshair) 위치의 가격과 직전 종가 대비 등락률(%)을 직관적으로 보여주는 크롬 확장 프로그램**입니다.
 
-## 🎥 시연 영상 (Demo)
-
-<video src="./시연영상.mp4" controls="controls" width="100%"></video>
 
 ---
 
